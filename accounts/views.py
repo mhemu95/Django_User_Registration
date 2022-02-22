@@ -37,7 +37,7 @@ def sign_in(request):
         if user is not None:
             login(request, user)
             print("logged in")
-            return redirect('accounts:home')
+            return redirect('crm:crm-home')
     
     return render(request, 'accounts/login.html')
 
